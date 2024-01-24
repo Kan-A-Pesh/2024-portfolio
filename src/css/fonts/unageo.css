@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Light-Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Regular-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Medium-Italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-SemiBold-Italic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Bold-Italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-ExtraBold-Italic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Unageo";
+    src: url("/fonts/unageo/Unageo-Black-Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}

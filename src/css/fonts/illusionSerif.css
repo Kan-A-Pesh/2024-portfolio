@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "IllusionSerif";
+    src: url("/fonts/illusion_serif/Regular/IllusionSerif-Regular.woff2") format("woff2"),
+        url("/fonts/illusion_serif/Regular/IllusionSerif-Regular.woff") format("woff"),
+        url("/fonts/illusion_serif/Regular/IllusionSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IllusionSerif";
+    src: url("/fonts/illusion_serif/Italic/IllusionSerif-Italic.woff2") format("woff2"),
+        url("/fonts/illusion_serif/Italic/IllusionSerif-Italic.woff") format("woff"),
+        url("/fonts/illusion_serif/Italic/IllusionSerif-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "IllusionSerif";
+    src: url("/fonts/illusion_serif/Bold/IllusionSerif-Bold.woff2") format("woff2"),
+        url("/fonts/illusion_serif/Bold/IllusionSerif-Bold.woff") format("woff"),
+        url("/fonts/illusion_serif/Bold/IllusionSerif-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IllusionSerif";
+    src: url("/fonts/illusion_serif/BoldItalic/IllusionSerif-BoldItalic.woff2") format("woff2"),
+        url("/fonts/illusion_serif/BoldItalic/IllusionSerif-BoldItalic.woff") format("woff"),
+        url("/fonts/illusion_serif/BoldItalic/IllusionSerif-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
