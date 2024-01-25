@@ -6,9 +6,16 @@ const getLang = () => {
     return availableLocales.includes(lang) ? lang : "en";
 };
 
+let langUrl = window.location.pathname.split("/")[1];
+if (langUrl === "") langUrl = "en";
+
 if (!localStorage.getItem("lang")) {
     localStorage.setItem("lang", getLang());
     if (getLang() !== "en") window.location.href = `/${getLang()}`;
+} else if (langUrl !== localStorage.getItem("lang")) {
+    const storedLang = localStorage.getItem("lang");
+    localStorage.setItem("lang", storedLang);
+    window.location.href = `/${storedLang === "en" ? "" : storedLang}`;
 }
 
 window.addEventListener("load", () => {
