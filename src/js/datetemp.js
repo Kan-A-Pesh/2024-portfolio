@@ -2,7 +2,7 @@
     // Date
     const datetempEl = document.querySelector("#DATE_AND_TEMP");
 
-    const dateUrl = "http://worldtimeapi.org/api/timezone/Europe/Paris";
+    const dateUrl = "https://worldtimeapi.org/api/timezone/Europe/Paris";
     const request = await fetch(dateUrl);
     const dateData = await request.json();
 
