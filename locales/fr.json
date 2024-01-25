@@ -1,0 +1,71 @@
+{
+    "lang": "fr",
+    "nav": {
+        "menu": "Menu",
+        "close": "Fermer"
+    },
+    "jumbotron": {
+        "role": "Développeur Fullstack",
+        "location": "Basé à Paris, France"
+    },
+    "about": {
+        "title": "À propos",
+        "student": "Étudiant à <b>l'Institut de l'Internet et du Multimédia</b>",
+        "president": "Président de la <b>404 Devinci</b>",
+        "mydevinci": "Développeur de l'application <b>myDevinci</b>",
+        "role": "Développeur Fullstack"
+    },
+    "projects": {
+        "title": "Projets",
+        "content": "Mes <span class=\"pixelated\">travaux</span>",
+        "rootaccess": "ROOT//ACCESS est une application web conçue pour la gestion transparente des membres d'équipe et des projets. Elle simplifie des tâches telles que l'ajout, la suppression et la mise à jour des informations des membres, ainsi que la création, la suppression et la modification des détails des projets. Le tableau de bord facilite également le lien avec les dépôts GitHub pour l'intégration et le déploiement continus (CI/CD), offrant un accès FTP, SFTP et SSH pour une collaboration et un déploiement efficaces.",
+        "hackerjourney": "The Hacker's Journey propose une série de défis engageants conçus pour tester et améliorer vos compétences en informatique. Chaque défi offre une expérience amusante et éducative, offrant des opportunités d'apprentissage précieuses dans divers domaines du secteur.",
+        "iimersive": "IMersive est un projet scolaire de première année à l'IIM, présentant un réseau social conçu pour partager des textes et des images, avec des balises, des commentaires et des likes. Le front-end utilise du HTML/CSS/JS natif, avec Bootstrap pour aider à la création des pages de connexion et d'inscription. Le back-end est développé en PHP natif, soutenu par une base de données MySQL.",
+        "donutclicker": "Créé dans le cadre d'un projet scolaire, Donut Clicker est un jeu développé en HTML, CSS et JavaScript. Le projet visait à perfectionner les compétences en JavaScript grâce à un gameplay interactif et engageant.",
+        "cellphone": "Un projet scolaire VueJS, Cellphone est une application de téléphone permettant aux utilisateurs de gérer facilement leurs contacts, passer des appels et consulter leur historique d'appels.",
+        "minesweeper": "Ce projet Minesweeper utilise Svelte, animé par le désir d'apprendre le framework grâce à une expérience de développement d'application engageante et amusante.",
+        "seemore": "Voir plus"
+    },
+    "expertise": {
+        "title": "Expertise",
+        "content": "<span class=\"pixelated\">Mon</span> expertise",
+        "fundamentals": {
+            "title": "Fondamentaux du Web",
+            "content": "Trio essentiel du développement web."
+        },
+        "frontend": {
+            "title": "Frontend",
+            "content": "Compétent dans les frameworks et langages frontend modernes, améliorant les interfaces utilisateur avec des conceptions dynamiques et réactives."
+        },
+        "backendjs": {
+            "title": "Backend: JS",
+            "content": "Expertise dans la construction d'applications robustes côté serveur avec Express, Node.js et AdonisJS."
+        },
+        "backendphp": {
+            "title": "Backend: PHP",
+            "content": "Compétent dans Symphony, PHP et WordPress, avec un accent sur le développement backend efficace et la gestion de base de données MySQL."
+        },
+        "design": {
+            "title": "Design",
+            "content": "Compétent dans Figma, facilitant une collaboration transparente et une mise en œuvre efficace du design. (comme celui-ci)"
+        },
+        "versatile": {
+            "title": "Polyvalent",
+            "content": "Capable de s'adapter à n'importe quel projet et de relever divers défis de programmation."
+        },
+        "devops": {
+            "title": "DevOps",
+            "content": "Expérimenté dans le scripting Bash pour l'automatisation et Docker pour le déploiement efficace d'applications conteneurisées."
+        },
+        "gamedev": {
+            "title": "Développement de jeux",
+            "content": "Unity et C# pour créer des expériences de jeu immersives et interactives."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "content": "Me <span class=\"pixelated\">contacter</span>",
+        "desc": "Étudiant à l'IIM"
+    },
+    "footer": "Fabriqué avec ♡"
+}

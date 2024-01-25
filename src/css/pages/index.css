@@ -1,0 +1,19 @@
+section.ph-low {
+    padding-left: calc(var(--unit) * 64px);
+    padding-right: calc(var(--unit) * 64px);
+}
+
+section.ph-high,
+footer {
+    padding-left: var(--margins);
+    padding-right: var(--margins);
+}
+
+section.pv {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+section > .title {
+    padding: 6rem 0;
+}

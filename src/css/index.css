@@ -9,4 +9,22 @@
 
 @import url("./pages/index.css");
 
+@import url("./sections/jumbotron.css");
+@import url("./sections/about.css");
+@import url("./sections/projects.css");
+@import url("./sections/expertise.css");
+@import url("./sections/contact.css");
+@import url("./sections/footer.css");
+
 @import url("./components/background.css");
+@import url("./components/button.css");
+@import url("./components/navbar.css");
+@import url("./components/projectCard.css");
+@import url("./components/link.css");
+@import url("./components/language.css");
+
+@import url("./utils/flex.css");
+@import url("./utils/padding.css");
+@import url("./utils/border.css");
+
+@import url("./lib/lenis.css");

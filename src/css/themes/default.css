@@ -1,4 +1,7 @@
 :root {
-    --color-black: #000;
-    --color-white: #fff;
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+
+    --color-white: rgb(var(--white));
+    --color-black: rgb(var(--black));
 }

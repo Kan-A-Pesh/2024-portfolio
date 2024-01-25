@@ -1,0 +1,19 @@
+.link {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-black);
+    transition: width 0.2s ease-in-out;
+}
+
+.link:hover:after {
+    width: 100%;
+}

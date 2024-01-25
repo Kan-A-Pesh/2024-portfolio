@@ -1,0 +1,21 @@
+#projects .see-more {
+    width: 100%;
+}
+
+#projects .see-more span {
+    margin: auto 0;
+    padding-top: 4px;
+}
+
+#projects .see-more a:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#projects .see-more a img {
+    transition: transform 0.2s ease-in-out;
+}
+#projects .see-more a:hover img {
+    filter: invert(100%);
+    transform: translateX(5px);
+}

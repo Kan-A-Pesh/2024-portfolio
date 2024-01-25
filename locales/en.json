@@ -1,0 +1,71 @@
+{
+    "lang": "en",
+    "nav": {
+        "menu": "Menu",
+        "close": "Close"
+    },
+    "jumbotron": {
+        "role": "Fullstack developer",
+        "location": "Based in Paris, France"
+    },
+    "about": {
+        "title": "About",
+        "student": "Student at the <b>institute of internet and multimedia</b>",
+        "president": "President of the <b>404 devinci</b>",
+        "mydevinci": "Developer of the <b>myDevinci application</b>",
+        "role": "Fullstack developer"
+    },
+    "projects": {
+        "title": "Projects",
+        "content": "Selected <span class=\"pixelated\">Works</span>",
+        "rootaccess": "ROOT//ACCESS is a web app designed for seamless management of team members and projects. It simplifies tasks such as adding, deleting, and updating member information, as well as creating, deleting, and modifying project details. The dashboard also facilitates GitHub repository linking for continuous integration and deployment (CI/CD), offering FTP, SFTP, and SSH access for efficient collaboration and deployment.",
+        "hackerjourney": "The Hacker's Journey offers an engaging series of challenges designed to test and enhance your computer science skills. Each challenge provides a fun and educational experience, offering valuable learning opportunities in diverse areas of the field.",
+        "iimersive": "IMersive is a first-year school project at IIM, presenting a social network designed for sharing texts and images, featuring tags, comments, and likes. The front-end utilizes native HTML/CSS/JS, with Bootstrap assisting in crafting the login and registration pages. The back-end is developed in native PHP, supported by a MySQL database.",
+        "donutclicker": "Created as part of a school project, Donut Clicker is a delightful game developed using HTML, CSS, and JavaScript. The project aimed to hone JavaScript skills through interactive and engaging gameplay.",
+        "cellphone": "A VueJS school project, Cellphone is a user-friendly phone app enabling users to effortlessly manage contacts, make calls, and view their call history.",
+        "minesweeper": "This Minesweeper project is utilizing Svelte, driven by the desire to learn the framework through an engaging and fun application development experience.",
+        "seemore": "See more"
+    },
+    "expertise": {
+        "title": "Expertise",
+        "content": "<span class=\"pixelated\">My</span> expertise",
+        "fundamentals": {
+            "title": "Web Fundamentals",
+            "content": "Essential trio forming the backbone of web development."
+        },
+        "frontend": {
+            "title": "Frontend",
+            "content": "Proficient in modern frontend frameworks and languages, enhancing user interfaces with dynamic and responsive designs."
+        },
+        "backendjs": {
+            "title": "Backend: JS",
+            "content": "Expertise in building robust server-side applications using Express, Node.js, and AdonisJS."
+        },
+        "backendphp": {
+            "title": "Backend: PHP",
+            "content": "Skilled in Symphony, PHP, and WordPress, with a focus on efficient backend development and MySQL database management."
+        },
+        "design": {
+            "title": "Design",
+            "content": "Proficient in Figma, facilitating seamless collaboration and effective design implementation. (like this one)"
+        },
+        "versatile": {
+            "title": "Versatile",
+            "content": "Able to adapt to any project and capable of tackling diverse programming challenges."
+        },
+        "devops": {
+            "title": "DevOps",
+            "content": "Experienced in Bash scripting for automation and Docker for efficient containerized application deployment."
+        },
+        "gamedev": {
+            "title": "Game Development",
+            "content": "Unity and C# for creating immersive and interactive gaming experiences."
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "content": "Contact <span class=\"pixelated\">me</span>",
+        "desc": "Student at IIM"
+    },
+    "footer": "Made with ♡"
+}

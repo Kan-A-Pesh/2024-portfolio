@@ -1,0 +1,13 @@
+footer > p {
+    flex-grow: 1;
+    width: 33%;
+    text-align: center;
+}
+
+footer > p:first-child {
+    text-align: left;
+}
+
+footer > p:last-child {
+    text-align: right;
+}

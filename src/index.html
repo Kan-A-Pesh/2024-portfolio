@@ -1,14 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-attr-t lang-t="lang" lang="en" class="lenis">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Michel Moccand - Portfolio 2024</title>
 
         <link rel="stylesheet" href="/css/index.css" />
-        <script src="/js/index.js"></script>
+
+        <script src="/js/locales.js"></script>
+
+        <script src="/js/datetemp.js" defer></script>
+        <script src="/js/about.js" defer></script>
+        <script src="/js/project.js" defer></script>
+        <script src="/js/lenis.js" defer></script>
+        <script src="/js/menu.js" defer></script>
+
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
     </head>
     <body>
         <img src="/images/Background.svg" alt="Background" id="background" />
+
+        <nav class="flex justify-between align-center ph-6 pv-2 border-bottom">
+            <h1 class="h3 regular">Michel <span class="pixelated">Moccand</span></h1>
+            <div class="flex gap-1">
+                <a class="button" href="https://www.linkedin.com/in/michelmoccand/" target="_blank">LinkedIn</a>
+                <a class="button" href="https://github.com/Kan-A-Pesh" target="_blank">GitHub</a>
+
+                <a class="button" href="#" id="menu-button">
+                    <span data-t="nav.menu">Menu</span>
+                    <img src="/images/Menu.svg" alt="Menu" width="32" role="menu" />
+                </a>
+            </div>
+        </nav>
+
+        <div id="menu" class="flex justify-end hidden">
+            <div class="drawer flex flex-column p-4 justify-end align-start">
+                <a class="button" href="#" id="close-button">
+                    <span data-t="nav.close">Close</span>
+                    <img src="/images/Menu.svg" alt="Close" width="32" role="menu" />
+                </a>
+                <a class="h2 spaced uppercase" href="#about" onclick="lenis.scrollTo('#about')">
+                    <h2 class="main" data-t="about.title">About</h2>
+                    <h2 class="pixelated" data-t="about.title">About</h2>
+                </a>
+                <a class="h2 spaced uppercase" href="#projects" onclick="lenis.scrollTo('#projects')">
+                    <h2 class="main" data-t="projects.title">Projects</h2>
+                    <h2 class="pixelated" data-t="projects.title">Projects</h2>
+                </a>
+                <a class="h2 spaced uppercase" href="#expertise" onclick="lenis.scrollTo('#expertise')">
+                    <h2 class="main" data-t="expertise.title">Expertise</h2>
+                    <h2 class="pixelated" data-t="expertise.title">Expertise</h2>
+                </a>
+                <a class="h2 spaced uppercase" href="#contact" onclick="lenis.scrollTo('#contact')">
+                    <h2 class="main" data-t="contact.title">Contact</h2>
+                    <h2 class="pixelated" data-t="contact.title">Contact</h2>
+                </a>
+                <select id="language" class="spaced uppercase">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+
+        <section id="jumbotron" class="ph-low flex center">
+            <div class="background flex center flex-row">
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+                <img src="/images/Cross.svg" alt="Cross" role="presentation" />
+            </div>
+            <div class="content flex gap-2 flex-column">
+                <div class="flex align-end gap-3">
+                    <div class="flex asterisk">
+                        <h2 class="h1 uppercase">Michel</h2>
+                        <img src="/images/Asterisk.svg" alt="Asterisk" role="presentation" class="asterisk-image" />
+                    </div>
+                    <h4 class="pixelated uppercase regular" data-t="jumbotron.role">Fullstack developer</h4>
+                </div>
+                <div class="flex gap-3">
+                    <div class="location flex flex-column justify-center">
+                        <hr class="line top-line" />
+                        <p class="title" data-t="jumbotron.location">Based in Paris, France</p>
+                        <p class="pixelated subtitle spaced" id="DATE_AND_TEMP">hh:mm AM GMT+1 00.00°C</p>
+                        <hr class="line under-line" />
+                        <hr class="line bottom-line" />
+                    </div>
+                    <h2 class="h1 uppercase outline">Moccand</h2>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="ph-high pv">
+            <div class="content flex center">
+                <p data-t="about.student">Student at the <b>institute of internet and multimedia</b></p>
+                <div class="spacer"></div>
+                <p data-t="about.president">President of the <b>404 devinci</b></p>
+                <img src="/images/Star.svg" alt="Star" role="presentation" />
+                <p data-t="about.mydevinci">Developer of the <b>myDevinci application</b></p>
+                <div class="separator flex center"></div>
+                <p data-t="about.role">Fullstack developer</p>
+            </div>
+        </section>
+        <section id="projects" class="ph-high pv flex flex-column center gap-6">
+            <h2 class="uppercase regular spaced title" data-t="projects.content">Selected <span class="pixelated">Works</span></h2>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">01</p>
+                <img src="/images/screenshots/root-access.jpg" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">Root // Access</p>
+                    <p class="p2" data-t="projects.rootaccess">
+                        ROOT//ACCESS is a web app designed for seamless management of team members and projects. It simplifies tasks such as
+                        adding, deleting, and updating member information, as well as creating, deleting, and modifying project details. The
+                        dashboard also facilitates GitHub repository linking for continuous integration and deployment (CI/CD), offering
+                        FTP, SFTP, and SSH access for efficient collaboration and deployment.
+                    </p>
+                    <a class="button" href="https://github.com/Kan-A-Pesh/root-access" target="_blank">
+                        <span class="uppercase">Github</span>
+                        <img src="/images/External-Link.svg" alt="external link" role="button" />
+                    </a>
+                </div>
+            </div>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">02</p>
+                <img src="/images/screenshots/hack-journey.png" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">The hacker's journey</p>
+                    <p class="p2" data-t="projects.hackerjourney">
+                        The Hacker's Journey offers an engaging series of challenges designed to test and enhance your computer science
+                        skills. Each challenge provides a fun and educational experience, offering valuable learning opportunities in
+                        diverse areas of the field.
+                    </p>
+                    <div class="flex gap-2">
+                        <a class="button" href="https://github.com/Kan-A-Pesh/hack-journey" target="_blank">
+                            <span class="uppercase">Github</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                        <a class="button" href="https://hack.kan-a-pesh.fr/" target="_blank">
+                            <span class="uppercase">Demo</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">03</p>
+                <img src="/images/screenshots/iimersive.png" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">IIMersive</p>
+                    <p class="p2" data-t="projects.iimersive">
+                        IIMersive is a first-year school project at IIM, presenting a social network designed for sharing texts and images,
+                        featuring tags, comments, and likes. The front-end utilizes native HTML/CSS/JS, with Bootstrap assisting in crafting
+                        the login and registration pages. The back-end is developed in native PHP, supported by a MySQL database.
+                    </p>
+                    <div class="flex gap-2">
+                        <a class="button" href="https://github.com/Kan-A-Pesh/b1-IIMersive" target="_blank">
+                            <span class="uppercase">Github</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                        <a class="button" href="https://iimersive.kan-a-pesh.fr/" target="_blank">
+                            <span class="uppercase">Demo</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">04</p>
+                <img src="/images/screenshots/donut.png" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">Donut clicker</p>
+                    <p class="p2" data-t="projects.donutclicker">
+                        Created as part of a school project, Donut Clicker is a delightful game developed using HTML, CSS, and JavaScript.
+                        The project aimed to hone JavaScript skills through interactive and engaging gameplay.
+                    </p>
+                    <div class="flex gap-2">
+                        <a class="button" href="https://github.com/Kan-A-Pesh/b1-donut" target="_blank">
+                            <span class="uppercase">Github</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                        <a class="button" href="https://kan-a-pesh.github.io/b1-donut/" target="_blank">
+                            <span class="uppercase">Demo</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">05</p>
+                <img src="/images/screenshots/cellphone.png" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">Cellphone</p>
+                    <p class="p2" data-t="projects.cellphone">
+                        A VueJS school project, Cellphone is a user-friendly phone app enabling users to effortlessly manage contacts, make
+                        calls, and view their call history.
+                    </p>
+                    <div class="flex gap-2">
+                        <a class="button" href="https://github.com/Kan-A-Pesh/b2-cellphone" target="_blank">
+                            <span class="uppercase">Github</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                        <a class="button" href="https://cellphone.school.kan-a-pesh.fr/" target="_blank">
+                            <span class="uppercase">Demo</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex pv-4 border-top project-card">
+                <p class="pixelated spaced title">06</p>
+                <img src="/images/screenshots/minesweeper.png" alt="project icon" class="thumbnail" />
+                <div class="flex flex-column gap-3 align-start">
+                    <p class="uppercase">Minesweeper</p>
+                    <p class="p2" data-t="projects.minesweeper">
+                        This Minesweeper project is utilizing Svelte, driven by the desire to learn the framework through an engaging and
+                        fun application development experience.
+                    </p>
+                    <div class="flex gap-2">
+                        <a class="button" href="https://github.com/Kan-A-Pesh/svelte-minesweeper" target="_blank">
+                            <span class="uppercase">Github</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                        <a class="button" href="https://minesweeper.kan-a-pesh.fr/" target="_blank">
+                            <span class="uppercase">Demo</span>
+                            <img src="/images/External-Link.svg" alt="external link" role="button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom p-2 see-more flex justify-end">
+                <a class="pv-1 ph-2" href="https://github.com/Kan-A-Pesh" target="_blank">
+                    <div class="flex gap-2 align-center justify-center">
+                        <span class="uppercase spaced p2" data-t="projects.seemore">See more</span>
+                        <img src="/images/Arrow-Right.svg" alt="external link" role="button" />
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="expertise" class="ph-low pv flex flex-column center gap-6">
+            <h2 class="uppercase regular spaced title" data-t="expertise.content"><span class="pixelated">My</span> expertise</h2>
+            <div class="grid">
+                <div class="item-2 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/html.png" width="48" alt="HTML" role="presentation" />
+                        <img src="/images/languages/css.png" width="48" alt="CSS" role="presentation" />
+                        <img src="/images/languages/js.png" width="48" alt="JS" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.fundamentals.title">Web Fundamentals</p>
+                    <p class="p2" data-t="expertise.fundamentals.content">Essential trio forming the backbone of web development.</p>
+                </div>
+
+                <div class="item-3 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/ts.png" width="48" alt="TS" role="presentation" />
+                        <img src="/images/languages/sass.png" width="48" alt="Sass" role="presentation" />
+                        <img src="/images/languages/react.png" width="48" alt="React" role="presentation" />
+                        <img src="/images/languages/vue.png" width="48" alt="Vue" role="presentation" />
+                        <img src="/images/languages/svelte.png" width="48" alt="Svelte" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.frontend.title">Frontend</p>
+                    <p class="p2" data-t="expertise.frontend.content">
+                        Proficient in modern frontend frameworks and languages, enhancing user interfaces with dynamic and responsive
+                        designs.
+                    </p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="spacer"></div>
+
+                <div class="item-2 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/nodejs.png" width="48" alt="Node" role="presentation" />
+                        <img src="/images/languages/express.png" width="48" alt="Express" role="presentation" />
+                        <img src="/images/languages/adonis.png" width="48" alt="Adonis" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.backendjs.title">Backend: JS</p>
+                    <p class="p2" data-t="expertise.backendjs.content">
+                        Expertise in building robust server-side applications using Express, Node.js, and AdonisJS.
+                    </p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="item-2 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/php.png" width="48" alt="PHP" role="presentation" />
+                        <img src="/images/languages/symfony.png" width="48" alt="Symfony" role="presentation" />
+                        <img src="/images/languages/wordpress.png" width="48" alt="WordPress" role="presentation" />
+                        <img src="/images/languages/mysql.png" width="48" alt="MySQL" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.backendphp.title">Backend: PHP</p>
+                    <p class="p2" data-t="expertise.backendphp.content">
+                        Skilled in Symphony, PHP, and WordPress, with a focus on efficient backend development and MySQL database
+                        management.
+                    </p>
+                </div>
+
+                <div class="item-3 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/figma.png" width="48" alt="Figma" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.design.title">Design</p>
+                    <p class="p2" data-t="expertise.design.content">
+                        Proficient in Figma, facilitating seamless collaboration and effective design implementation. (like this one)
+                    </p>
+                </div>
+
+                <div class="item-2 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/python.png" width="48" alt="Python" role="presentation" />
+                        <img src="/images/languages/java.png" width="48" alt="Java" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.versatile.title">Versatile</p>
+                    <p class="p2" data-t="expertise.versatile.content">
+                        Able to adapt to any project and capable of tackling diverse programming challenges.
+                    </p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="item-2 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/git.png" width="48" alt="Git" role="presentation" />
+                        <img src="/images/languages/github.png" width="48" alt="GitHub" role="presentation" />
+                        <img src="/images/languages/bash.png" width="48" alt="Bash" role="presentation" />
+                        <img src="/images/languages/docker.png" width="48" alt="Docker" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.devops.title">DevOps</p>
+                    <p class="p2" data-t="expertise.devops.content">
+                        Experienced in Bash scripting for automation and Docker for efficient containerized application deployment.
+                    </p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="item-3 flex flex-column gap-3 p-2">
+                    <div class="flex gap-2">
+                        <img src="/images/languages/unity.png" width="48" alt="Unity" role="presentation" />
+                        <img src="/images/languages/csharp.png" width="48" alt="C#" role="presentation" />
+                    </div>
+                    <p class="uppercase" data-t="expertise.gamedev.title">Game development</p>
+                    <p class="p2" data-t="expertise.gamedev.content">
+                        Unity and C# for creating immersive and interactive gaming experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="ph-high pv flex flex-column center gap-6">
+            <h2 class="uppercase regular spaced title" data-t="contact.content">Contact <span class="pixelated">me</span></h2>
+            <div class="card user flex align-center gap-2">
+                <img src="/images/photos/profile.png" alt="Profile" width="128" class="profile" />
+                <div class="infos">
+                    <p class="name">Michel Moccand</p>
+                    <p class="desc p2" data-t="contact.desc">Student at IIM</p>
+                </div>
+            </div>
+            <div class="card links flex align-center justify-end gap-2">
+                <div class="flex flex-column gap-2">
+                    <a class="link p2" href="https://www.linkedin.com/in/michelmoccand/" target="_blank">LinkedIn</a>
+                    <a class="link p2" href="https://github.com/Kan-A-Pesh" target="_blank">GitHub</a>
+                </div>
+                <div class="flex flex-column gap-2">
+                    <a class="link p2" href="mailto:michel.moccandjacquet@gmail.com" target="_blank">michel.moccandjacquet@gmail.com</a>
+                    <a class="link p2" href="tel:+33661064042" target="_blank">+33 (0)6 61 06 40 42</a>
+                </div>
+            </div>
+        </section>
+        <footer class="flex justify-between p-2 gap-2 border-top">
+            <p class="uppercase p2">Michel Moccand</p>
+            <p class="uppercase p2" data-t="footer">Made with ♡</p>
+            <p class="uppercase p2">© 2024</p>
+        </footer>
     </body>
 </html>

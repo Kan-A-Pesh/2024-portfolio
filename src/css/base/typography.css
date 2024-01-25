@@ -6,52 +6,45 @@
 
 h1,
 .h1 {
-    font-size: calc(70px * var(--unit)); /* 56px <-> 35px */
+    font-size: 12.25rem;
     font-weight: 900;
-    line-height: calc(77px * var(--unit)); /* 110% */
-    letter-spacing: -1.2px;
+}
+h1.pixelated,
+.h1.pixelated,
+h1 .pixelated,
+.h1 .pixelated {
+    font-size: calc(12.25rem * 0.5625);
 }
 
 h2,
 .h2 {
-    font-size: calc(60px * var(--unit)); /* 48px <-> 30px */
-    font-weight: 700;
-    line-height: calc(66px * var(--unit)); /* 110% */
+    font-size: calc(7rem * var(--unit));
+}
+h2.pixelated,
+.h2.pixelated,
+h2 .pixelated,
+.h2 .pixelated {
+    font-size: calc(7rem * 0.5625 * var(--unit));
 }
 
 h3,
 .h3 {
-    font-size: calc(50px * var(--unit)); /* 40px <-> 25px */
-    font-weight: 700;
-    line-height: calc(55px * var(--unit)); /* 110% */
+    font-size: 2rem;
 }
-
-h4,
-.h4 {
-    font-size: calc(40px * var(--unit)); /* 32px <-> 20px */
-    font-weight: 700;
-    line-height: calc(44px * var(--unit)); /* 110% */
-}
-
-h5,
-.h5 {
-    font-size: calc(35px * var(--unit)); /* 28px <-> 17.5px */
-    font-weight: 700;
-    line-height: calc(38.5px * var(--unit)); /* 110% */
-}
-
-h6,
-.h6 {
-    font-size: calc(30px * var(--unit)); /* 24px <-> 15px */
-    font-weight: 500;
-    line-height: calc(33px * var(--unit)); /* 110% */
+h3.pixelated,
+.h3.pixelated,
+h3 .pixelated,
+.h3 .pixelated {
+    font-size: calc(2rem * 0.5625);
 }
 
 p,
 .p {
-    font-size: max(14px, calc(25px * var(--unit))); /* 20px <-> 14px */
-    font-weight: 400;
-    line-height: max(18px, calc(27.5px * var(--unit))); /* 110% */
+    font-size: 2rem;
+}
+
+.p2 {
+    font-size: 16px;
 }
 
 body {
@@ -64,10 +57,23 @@ b,
     font-weight: 700;
 }
 
+.regular {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .spaced {
-    letter-spacing: 5%;
+    letter-spacing: 0.1rem;
 }
 
 .pixelated {
     font-family: "IllusionSerif", monospace;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

@@ -17,12 +17,6 @@ echo "Building static-i18n"
 static-i18n --output-dir ./dist --localesPath ./locales --l en -d src \
     --i en \
     --i fr \
-    --i es \
-    --i de \
-    --i it \
-    --i zh \
-    --i ja \
-    --i ko \
     .
 
 cd ./dist

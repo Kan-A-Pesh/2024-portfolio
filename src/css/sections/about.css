@@ -1,0 +1,29 @@
+#about > div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+    margin: 4rem auto;
+    gap: 0.5rem;
+}
+
+#about .content > * {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#about .content > *:not(p) {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#about .content > .separator {
+    height: auto;
+    width: 2rem;
+}
+
+#about .content > .separator:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-black);
+}

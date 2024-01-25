@@ -1,0 +1,131 @@
+#jumbotron {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#jumbotron > .background {
+    position: absolute;
+    top: 0;
+    left: var(--margins);
+    right: var(--margins);
+    height: 100%;
+
+    z-index: -1;
+    gap: 6rem 8rem;
+    flex-wrap: wrap;
+}
+
+#jumbotron > .background > img:nth-child(1) {
+    opacity: 0.2;
+}
+#jumbotron > .background > img:nth-child(2) {
+    opacity: 0.1;
+}
+#jumbotron > .background > img:nth-child(3) {
+    opacity: 0.15;
+}
+#jumbotron > .background > img:nth-child(4) {
+    opacity: 0.17;
+}
+#jumbotron > .background > img:nth-child(5) {
+    opacity: 0.15;
+}
+#jumbotron > .background > img:nth-child(6) {
+    opacity: 0.07;
+}
+#jumbotron > .background > img:nth-child(7) {
+    opacity: 0.17;
+}
+#jumbotron > .background > img:nth-child(8) {
+    opacity: 0.08;
+}
+#jumbotron > .background > img:nth-child(9) {
+    opacity: 0.2;
+}
+#jumbotron > .background > img:nth-child(10) {
+    opacity: 0.1;
+}
+#jumbotron > .background > img:nth-child(11) {
+    opacity: 0.25;
+}
+#jumbotron > .background > img:nth-child(12) {
+    opacity: 0.12;
+}
+
+#jumbotron > .content {
+    width: 100%;
+    max-width: 1366px;
+}
+
+#jumbotron > .content h2 {
+    line-height: 0.75;
+    font-size: max(calc(var(--margins) * var(--unit) * 1.2), 4.5rem);
+}
+
+#jumbotron > .content h2.outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+#jumbotron > .content .asterisk {
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+#jumbotron > .content .asterisk-image {
+    height: calc(4rem * var(--unit));
+    width: calc(4rem * var(--unit));
+}
+
+#jumbotron > .content h4 {
+    height: 32px;
+}
+
+#jumbotron > .content .location {
+    margin-right: auto;
+    gap: 4px;
+}
+
+#jumbotron > .content .location .line {
+    height: 1px;
+    background-color: var(--color-black);
+    border: none;
+    margin: 4px 0;
+}
+
+#jumbotron > .content .location .top-line {
+    width: 60%;
+    opacity: 0.25;
+}
+
+#jumbotron > .content .location .title {
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
+#jumbotron > .content .location .subtitle {
+    font-size: 0.5rem;
+    height: 1rem;
+    opacity: 0.5;
+}
+
+#jumbotron > .content .location .under-line {
+    width: 75%;
+    opacity: 0.5;
+}
+
+#jumbotron > .content .location .bottom-line {
+    width: 30%;
+    opacity: 0.25;
+}
+
+@media screen and (max-width: 992px) {
+    #jumbotron > .content > div {
+        flex-direction: column-reverse;
+    }
+
+    #jumbotron > .content > div:nth-child(1) > h4 {
+        margin-right: auto;
+    }
+}

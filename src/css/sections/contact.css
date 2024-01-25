@@ -1,0 +1,20 @@
+#contact > .card {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+#contact .user img {
+    width: 6rem;
+    height: auto;
+    border-radius: 50%;
+}
+#contact .user .name {
+    font-size: 1.5rem;
+}
+#contact .user .desc {
+    opacity: 0.5;
+}
+#contact .links {
+    flex-wrap: wrap;
+}

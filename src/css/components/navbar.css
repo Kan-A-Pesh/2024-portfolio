@@ -1,0 +1,85 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(var(--white), 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    nav div .button:not(:last-child),
+    nav div .button:last-child span {
+        display: none;
+    }
+
+    nav div .button:last-child img {
+        width: 24px;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(24px);
+    z-index: 100;
+    background: rgba(var(--black), 0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+#menu .drawer {
+    width: max-content;
+    height: 100%;
+    background: var(--color-white);
+    padding-right: calc(var(--unit) * 6rem);
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+#menu.hidden .drawer {
+    transform: translateX(100%);
+}
+
+#menu .drawer #close-button {
+    margin-bottom: auto;
+}
+#menu .drawer #close-button:after {
+    z-index: 101;
+}
+#menu .drawer #close-button * {
+    z-index: 102;
+}
+
+#menu .drawer .h2 {
+    position: relative;
+}
+
+#menu .drawer .h2 h2.main {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: clip-path 0.3s ease-in-out;
+    opacity: 0.5;
+}
+#menu .drawer .h2 h2.pixelated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: calc(7rem * 0.625 * var(--unit));
+    height: 100%;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    transition: clip-path 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+#menu .drawer .h2:hover h2.main {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+#menu .drawer .h2:hover h2.pixelated {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}

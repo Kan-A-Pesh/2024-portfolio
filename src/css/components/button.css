@@ -1,0 +1,48 @@
+button,
+.button {
+    font-size: 1rem;
+    border: 1px solid var(--color-black);
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--color-black);
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+    color: var(--color-white);
+}
+
+button:hover img,
+.button:hover img {
+    transition: filter 0.2s ease-in-out;
+    filter: invert(1);
+}
+
+button:after,
+.button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-black);
+    border-radius: 0;
+    transition: width 0.2s ease-in-out;
+    z-index: -1;
+}
+
+button:hover:after,
+.button:hover:after {
+    width: 100%;
+}
