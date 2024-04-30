@@ -7,8 +7,8 @@ ARG domain
 # Set the working directory
 WORKDIR /app
 
-# Install dependencies (screen)
-RUN apk add screen
+# Install dependencies
+RUN apk add screen nginx
 
 # Copy the contents of the current directory to the container
 COPY . .
@@ -16,5 +16,8 @@ COPY . .
 # Run the build script
 RUN sh build.sh $domain
 
-# Set the default command to serve the website
-CMD ["sh", "-c", "cd /app/dist && npx http-server -p 80"]
+# Copy dist to nginx
+RUN cp -r dist/* /usr/share/nginx/html
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
