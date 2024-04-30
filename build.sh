@@ -1,4 +1,10 @@
-domain="https://kan-a-pesh.fr"
+if [ -z "$1" ]
+  then
+    echo "No domain supplied"
+    exit 1
+fi
+
+domain=$1
 changeFreq="monthly"
 lastMod=$(date +%Y-%m-%d)
 
