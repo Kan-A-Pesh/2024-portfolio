@@ -1,6 +1,4 @@
-# Use a base image
 FROM node:14-alpine
-
 ENV NODE_ENV=production
 ARG domain
 
@@ -8,7 +6,7 @@ ARG domain
 WORKDIR /app
 
 # Install dependencies
-RUN apk add screen nginx
+RUN apk add screen
 
 # Copy the contents of the current directory to the container
 COPY . .
@@ -16,8 +14,5 @@ COPY . .
 # Run the build script
 RUN sh build.sh $domain
 
-# Copy dist to nginx
-RUN cp -r dist/* /usr/share/nginx/html
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Serve static files
+CMD ["npx", "serve", "-s", "dist", "-l", "80"]
