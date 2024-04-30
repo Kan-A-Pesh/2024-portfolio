@@ -16,22 +16,16 @@ rm -rf ./dist
 echo "Copying static files"
 cp -r ./src ./dist
 
-echo "Installing static-i18n"
-npm install -g static-i18n
-
 echo "Building static-i18n"
-static-i18n --output-dir ./dist --localesPath ./locales --l en -d src \
+npx static-i18n --output-dir ./dist --localesPath ./locales --l en -d src \
     --i en \
     --i fr \
     .
 
 cd ./dist
 
-echo "Installing temporary server"
-npm install -g serve
-
 echo "Creating temporary server"
-screen -dmS tempserver serve -l 30000
+screen -dmS tempserver npx serve -l 30000
 
 echo "Generating sitemap"
 npx sitemap-generator-cli http://localhost:30000 --change-freq $changeFreq --last-mod $lastMod -v 

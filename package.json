@@ -1,0 +1,12 @@
+{
+    "name": "portfolio-2024",
+    "scripts": {
+        "build": "sh build.sh"
+    },
+    "private": true,
+    "devDependencies": {
+        "serve": "^14.2.3",
+        "sitemap-generator-cli": "^7.5.0",
+        "static-i18n": "^0.2.10"
+    }
+}
