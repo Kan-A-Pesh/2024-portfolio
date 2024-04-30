@@ -16,3 +16,6 @@ RUN sh build.sh $domain
 
 # Serve static files
 CMD ["npx", "serve", "-s", "dist", "-l", "80"]
+
+# Expose the port
+EXPOSE 80
